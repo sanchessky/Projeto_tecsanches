@@ -10,7 +10,26 @@
 
 }
 
+#painel{
+    height: 100px;
+    padding-top: 100px;
+    border: 1px solid rgb(243, 97, 0);
+}
 
+#painel form{
+  
+
+}
+#painel form input{
+
+}
+#painel form button{
+
+}
+#painel form img{
+    width: 18px;
+    height: 18px;
+}
 
 
 
