@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#header-black{
+    background-color: black;
+    padding: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RodaPé*/
+footer{
+    height: 300px;
+    padding: 50px;
+    background-color: #d1cac7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#endereco{
+    color: #333;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 12pt;
+    line-height: 18pt;
+}
+#menufooter nav ul{
+    list-style: none;
+}
+#menufooter nav ul li a{
+    color:rgb(58, 22, 22);
+    font-family: 'Franklin Gothic Medium';
+    text-decoration: none;
+    padding: 5px;
+}
+#redes-pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#redes img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
