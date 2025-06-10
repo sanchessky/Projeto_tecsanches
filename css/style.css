@@ -5,39 +5,78 @@
 }
 
 #header-black {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 30px;
     display: flex;
+    justify-content: flex-end;
+}
+#header-black img {
+    height: 75px;
+    margin-top: 10px;
 }
 
 #painel {
-    padding-top: 0px;
-    border: 1px solid rgb(243, 97, 0);
+    width: 3000px;
+    padding: 20px;
+    text-align: center;
 }
 
-#pesquisa {}
-
-
-
 #painel form {
-    height: 200px;
-
+    width: 850px;
+    height: 50px;
+    border: 1px solid rgb(238, 255, 0);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
 }
 
 #painel form input {
     border: 1px solid rgb(255, 0, 0);
-    
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0;
+
+}
+
+
+#painel form input button {
+
+}
+
+#btnSearch {
+    width: 48px;
+    height: 48px;
+    background-image: url('../img/lupa2.png');
+    border: none;
+    cursor: pointer; 
     
 }
 
-#painel form button {}
+#painel img {
+    width: 30px;
+    height: 50px;
 
+}
 
 
 #pesquita-titulo {
     border: 1px solid rgb(243, 97, 0);
-    margin-top: 0px;
+    margin-top: 10px;
     padding-top: 0px;
+}
+#carrinho{
+    display: flex;      
+    justify-content: space-between; 
+    margin-left: 1090px;
+    margin-top: -55px;
+    width: 50px;
+    height: 50px;
+   
 }
 
 
