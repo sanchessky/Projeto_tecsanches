@@ -30,7 +30,6 @@ Idealizado para simular a estrutura funcional de um comércio moderno, com foco 
 - Associado às vendas, com:
   - Tipo de pagamento, valor, status e número de parcelas
 
----
 
 ## Ambiente de Desenvolvimento
 
@@ -40,8 +39,9 @@ O Front-End foi desenvolvido com:
 - Tecnologias como HTML, CSS e JavaScript
 - Estrutura modular e organizada por páginas e componentes
 
----
-
+## Responsivo
+![Mobile](img/responsivo.PNG) | ![Mobile Deitado](img/responsivodeitado.PNG)
+![Tablet](img/tablet.PNG) | ![Tablet Deitado](img/tabletdeitado.PNG)
 
 # Autores
 * Allan Victor – Front-End
