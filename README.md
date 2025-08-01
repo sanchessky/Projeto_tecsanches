@@ -1,61 +1,46 @@
-# 🛠️ Projeto Backend Tec
-Projeto integrador desenvolvido no Senac Tatuapé, com foco no Front-End  sitw para uma loja equipamentos de informática. Idealizado para representar a estrutura funcional de um comércio moderno
-* Clientes
+# 🛠️ Projeto Front-End Tec Sabches
 
-* Funcionários
+Projeto integrador desenvolvido no **Senac Tatuapé**, com foco no **desenvolvimento Front-End** de um site para uma loja de equipamentos de informática.  
+Idealizado para simular a estrutura funcional de um comércio moderno, com foco em:
 
-* Produtos
+- Cadastro de Usuário
+- Produtos
+- Vendas
+- Pagamentos
 
-* Vendas
+## Principais Funcionalidades
 
-* Pagamentos
+### Cliente e Usuário
+- Cadastro, atualização e visualização de informações dos usuários do sistema.
 
-* Estoque
+### Produto
+- Registro de produtos com dados como:
+  - Nome, marca, categoria, código de barras, fabricante
+  - Preço, garantia e descrição
 
-# 🔎 Principais Entidades e Relacionamentos
+### Venda
+- Registro de transações comerciais entre clientes e loja
+- Armazena dados de entrega e valor total da compra
 
-* Cliente e Funcionário:
+### ItemVenda
+- Detalhamento dos produtos por venda
+- Inclui quantidade, preço unitário e descontos aplicáveis
 
-Relacionados às tabelas de Endereço e Contato, garantindo a centralização e reutilização de informações pessoais e de comunicação.
+### Pagamento
+- Associado às vendas, com:
+  - Tipo de pagamento, valor, status e número de parcelas
 
-* Produto:
+---
 
-Traz informações detalhadas como nome, preço, marca, categoria, código de barras, fabricante, garantia e descrição.
+## Ambiente de Desenvolvimento
 
-* Estoque:
+O Front-End foi desenvolvido com:
 
-Controla as quantidades de cada item, com dados como estoque mínimo, máximo, data da última entrada e saída.
+- **Visual Studio Code**
+- Tecnologias como HTML, CSS e JavaScript
+- Estrutura modular e organizada por páginas e componentes
 
-* Venda:
-
-Registra as transações comerciais, vinculando clientes e funcionários responsáveis. Também armazena dados de entrega e valor total.
-
-* ItemVenda:
-
-Detalha os produtos incluídos em cada venda, com quantidade, preço unitário e possíveis descontos.
-
-* Pagamento:
-
-Relacionado diretamente à venda, contendo tipo de pagamento, valor, status e número de parcelas.
-
-# 🔐 Integridade Referencial
-As chaves estrangeiras garantem a integridade entre as tabelas, tornando o sistema relacional coeso, seguro e eficiente, tanto para o uso operacional quanto para a geração de relatórios e análises administrativas.
-
-# 🖼️ Diagrama do Banco de Dados
-
-![Diagrama](img/Diagrama_Tec_page.jpg)
-
-## 🗄️ Back-End
-
-A parte do back-end conta com a implementação do banco de dados MySQL, responsável pelo armazenamento e gerenciamento dos dados da aplicação.
-
-![Banco de Dados](https://github.com/sanchessky/Projeto_BackendTec/blob/main/img/bancodedados.PNG?raw=true)
-
-## 🛠️ Ambiente de Desenvolvimento
-
-O back-end foi desenvolvido utilizando o **Visual Studio Code**:
-
-![Visual Studio Code](https://github.com/sanchessky/Projeto_BackendTec/blob/main/img/backtander.PNG?raw=true)
+---
 
 
 # Autores
@@ -66,3 +51,8 @@ O back-end foi desenvolvido utilizando o **Visual Studio Code**:
 * Ryan – Front-End
 
 * Thiago Sanches – Back-End, Front-End, Banco de Dados e Documentação
+
+## Observações Finais
+
+Este projeto é **educacional**, feito como parte do curso técnico e pode servir como base para implementações futuras, como a integração com APIs ou banco de dados real.
+
