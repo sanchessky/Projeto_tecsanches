@@ -5,24 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login Modal</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
 </head>
 
 <body onload="carregar_novidades()">
-
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="img/logo1.png" alt="Logo" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" href="pcgamer.html">Pc Gamer</a></li>
@@ -32,8 +27,6 @@
           <li class="nav-item"><a class="nav-link" href="perifericos.html">Periféricos</a></li>
           <li class="nav-item"><a class="nav-link" href="outros.html">Outros</a></li>
         </ul>
-
-        <!--  ícones alinhados à direita -->
         <div class="nav-icons">
           <a href="carrinho.html" class="carrinho">
             <img src="img/carrinho.png" alt="Carrinho de Compras">
@@ -44,55 +37,33 @@
         </div>
       </div>
   </nav>
-
   <main>
     <section id="novidades">
       <div class="Container">
         <h2>Novidades</h2>
         <div id="produtosnovidades"></div>
     </section>
-
-    <!--seta esquerda-->
     <div class="seta-esquerda" onclick="rolarNovidadesDireita()"><img src="img/seta_esquerda.png" alt="seta esquerda">
     </div>
-    <!--seta direita-->
     <div class="seta-direita" onclick="rolarNovidadesEsquerda()"><img src="img/seta_direita.png" alt="seta direita">
     </div>
-    <!--Fim Novidades livros mais vendidos-->
-
-
-    <!--  Os mais vendidos-->
     <section id="maisvendidos">
       <h2>Mais Procurados</h2>
       <p class="txtmaisvendidos">Confira nossos mais procurados.</p>
       <div id="produtosmaisvendidos">
-        <!--Caregamento dos livros do backand-->
       </div>
-
-
-
     </section>
-
-    <!--seta esquerda-->
     <div class="seta-esquerda-maisvendidos" onclick="rolarMaisVendidosDireita()"><img src="img/seta_esquerda.png"
         alt="seta esquerda"></div>
-    <!--seta direita-->
     <div class="seta-direita-maisvendidos" onclick="rolarMaisVendidosEsquerda()"><img src="img/seta_direita.png"
         alt="seta direita">
     </div>
-
-
-    <!--Autores-->
     <section id="Funcionario">
       <h2>Nossos Funcionarios</h2>
       <p class="txtfuncionarios">Confira nossos Nossos Funcionarios.</p>
       <div id="produtosfuncionarios">
     </section>
   </main>
-
-
-
-  <!--Rodapé-->
   <footer>
     <div id="menufooter">
       <nav>
@@ -104,7 +75,6 @@
           <li><a href="gabinetes.html">Gabinetes</a></li>
           <li><a href="perifericos.html">Periféricos</a></li>
           <li><a href="outros.html">Outros</a></li>
-
         </ul>
       </nav>
     </div>
@@ -130,8 +100,6 @@
       <img src="img/Powered-by.png">
     </div>
   </footer>
-
-  <!-- Modal de Login -->
   <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -153,8 +121,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Modal de Cadastro -->
   <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -182,11 +148,12 @@
           <div class="mb-3">
             <label for="DataNas" class="form-label">Data de Nascimento</label>
             <input type="date" class="form-control" id="txtemail" placeholder="00/00/0000">
-          </div> 
+          </div>
           <div class="mb-3">
             <label for="txt_endereco" class="form-label">Endereço</label>
-            <input type="email" class="form-control" id="txtemail" placeholder="Rua das Flores, 123 - Centro, São Paulo">
-          </div> 
+            <input type="email" class="form-control" id="txtemail"
+              placeholder="Rua das Flores, 123 - Centro, São Paulo">
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -195,11 +162,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
   <script src="js/scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -207,10 +169,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-
-
-
-
 </body>
 
 </html>

@@ -2,21 +2,17 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 
-/* Estilizando a navbar */
 .navbar {
     background-color: #1f1f1f;
     box-shadow: 0 2px 10px rgba(96, 5, 216, 0.2);
 }
 
-/* Marca (logo) */
 .navbar-brand img {
     height: 40px;
 }
 
-/* Links da navbar */
 .navbar-nav .nav-link {
     color: #000000 !important;
     margin-right: 10px;
@@ -27,7 +23,6 @@ body {
     color: #00bcd4 !important;
 }
 
-/* Link ativo */
 .navbar-nav {
     font-weight: bold;
     color: #00bcd4 !important;
@@ -36,8 +31,6 @@ body {
     gap: 27px;
 }
 
-
-/* Botão de login */
 .btn-outline-success {
     width: 150px;
     border-radius: 100px;
@@ -74,7 +67,6 @@ body {
     width: 28px;
     height: 28px;
     transition: transform 0.3s ease;
-
 }
 
 .nav-icons a:hover img {
@@ -86,7 +78,6 @@ body {
     font-family: bold;
     font-size: 13pt;
     color: #000000;
-
 }
 
 .usuario img {
@@ -95,7 +86,6 @@ body {
     border-radius: 50px;
     margin-right: 8px;
 }
-
 
 .carrinho {
     margin-right: 20px;
@@ -109,8 +99,6 @@ body {
 main {
     margin: 50px auto;
     width: 85%;
-    /*teste(border)
-    border: 1px solid red;*/
 }
 
 #novidades,
@@ -118,8 +106,6 @@ main {
     background-color: white;
     width: 80vw;
     overflow: hidden;
-
-
 }
 
 #produtosnovidades,
@@ -127,8 +113,6 @@ main {
     background-color: white;
     display: flex;
     transition: ease 0.5s;
-
-
 }
 
 .produtos {
@@ -137,14 +121,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*teste(border)
-    border: 1px solid rgb(141, 255, 141);*/
 }
 
 .produtos img {
     width: 185px;
     height: 190px;
-
 }
 
 .produtos h3 {
@@ -188,22 +169,15 @@ main {
     font-family: Tahoma;
     font-size: 15pt;
     margin: 10px;
-
 }
 
-
-/*seta direita e seta esquerda*/
 .seta-esquerda {
     width: 33px;
     position: relative;
     top: -340px;
     left: -60px;
-    /*teste(border)
-    border: 1px solid rgb(0, 24, 239);*/
     transition: ease 0.5s;
     cursor: pointer;
-
-
 }
 
 .seta-direita {
@@ -211,11 +185,8 @@ main {
     position: relative;
     top: -378px;
     left: 1210px;
-    /*teste(border)
-    border: 1px solid rgb(0, 24, 239);*/
     transition: ease 0.5s;
     cursor: pointer;
-
 }
 
 #novidades .seta-esquerda:hover {
@@ -225,7 +196,6 @@ main {
 #novidades .seta-direita:hover {
     transform: scale(1.1);
 }
-
 
 #Funcionario h2 {
     text-align: center;
@@ -252,7 +222,6 @@ main {
     margin-right: 20px;
     transition: ease 0.3s;
     filter: blur(2px);
-
 }
 
 .funcionarios h3 {
@@ -266,14 +235,12 @@ main {
     cursor: pointer;
     transform: rotate();
     filter: blur(0px);
-
 }
 
 #produtosfuncionarios {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .funcionarios {
@@ -281,100 +248,109 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
 }
 
-#lstlivros{
+#lstlivros {
     display: flex;
     flex-wrap: wrap;
 }
-.livpcgamer, 
-.livhardware, 
-.livmonitores, 
-.livgabinetes, 
+
+.livpcgamer,
+.livhardware,
+.livmonitores,
+.livgabinetes,
 .livperifericos,
 .livoutros {
     width: 23%;
     margin: 10px;
 }
+
 .livpcgamer img,
-.livhardware img, 
-.livmonitores img, 
-.livgabinetes img, 
+.livhardware img,
+.livmonitores img,
+.livgabinetes img,
 .livperifericos img,
-.livoutros img{
+.livoutros img {
     width: 100%;
     height: 280px;
 }
+
 .livpcgamer h3,
-.livhardware h3, 
-.livmonitores h3, 
-.livgabinetes h3, 
+.livhardware h3,
+.livmonitores h3,
+.livgabinetes h3,
 .livperifericos h3,
-.livoutros h3{
+.livoutros h3 {
     font-family: 'Lucida Sans';
     font-size: 12pt;
 }
-.livpreco{
+
+.livpreco {
     font-family: 'Lucida Sans';
-    font-size:10pt;
+    font-size: 10pt;
     font-weight: bold;
     color: rgb(46, 3, 3)
-
 }
+
 .livpcgamer a,
-.livhardware a, 
-.livmonitores a, 
-.livgabinetes a, 
+.livhardware a,
+.livmonitores a,
+.livgabinetes a,
 .livperifericos a,
-.livoutros a{
+.livoutros a {
     font-family: 'Lucida Sans';
     font-size: 10pt;
     text-decoration: none;
 }
 
-#detalhes{
+#detalhes {
     display: flex;
-
 }
-#div_capa img{
+
+#div_capa img {
     width: 300px;
     height: 400px;
 }
-#div_miniatura{
+
+#div_miniatura {
     display: flex;
     justify-content: space-between;
 }
-#div_miniatura img{
+
+#div_miniatura img {
     width: 70px;
     height: 100px;
     cursor: pointer;
 }
 
-#div_titulo_descricao{
+#div_titulo_descricao {
     padding: 0px 10px;
 }
-#div_titulo_descricao h3{
+
+#div_titulo_descricao h3 {
     font-family: 'Lucida Sans';
     font-size: 20pt;
     margin-bottom: 30px;
 }
-#div_titulo_descricao p{
+
+#div_titulo_descricao p {
     font-family: arial;
     line-height: 20pt;
 }
 
-#div_carrinho{
+#div_carrinho {
     text-align: right;
 }
-#div_carrinho p{
+
+#div_carrinho p {
     font-family: tahoma;
     font-size: 20pt;
     color: darkred;
     margin-bottom: 100px;
     font-weight: bold;
 }
-#div_carrinho button{
+
+#div_carrinho button {
     width: 200px;
     background-color: rgb(11, 72, 185);
     color: white;
@@ -385,13 +361,13 @@ main {
     border-radius: 10px;
 }
 
-#div_qtd_itens{
+#div_qtd_itens {
     background-color: red;
-    color:white;
+    color: white;
     font-weight: bold;
     width: 15px;
     height: 15px;
-    border-radius:50%;
+    border-radius: 50%;
     font-size: 7.5pt;
     display: flex;
     justify-content: center;
@@ -402,7 +378,7 @@ main {
     display: none;
 }
 
-#lista_produto_carrinho div{
+#lista_produto_carrinho div {
     border: 1px solid silver;
     border-radius: 10px;
     display: flex;
@@ -410,26 +386,28 @@ main {
     justify-content: space-between;
     font-family: 'Franklin Gothic Medium';
 }
-#lista_produto_carrinho div img{
+
+#lista_produto_carrinho div img {
     width: 80px;
     height: 100px;
-    margin:10px
+    margin: 10px
 }
+
 #lista_produto_carrinho h4 {
     font-size: 14pt;
-    word-wrap: break-word;       /* quebra palavras longas */
-    overflow-wrap: break-word;   /* equivalente moderno */
-    white-space: normal;         /* permite quebrar linha */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
     width: 300px;
 }
 
-#lista_produto_carrinho div .btnexcluir{
+#lista_produto_carrinho div .btnexcluir {
     width: 36px;
     height: 36px;
     cursor: pointer;
 }
 
-#efetuar_pagamento{
+#efetuar_pagamento {
     border: 0px;
     font-family: 'Franklin Gothic Medium';
     font-size: 10pt;
@@ -441,21 +419,15 @@ main {
     font-weight: lighter;
     cursor: pointer;
     margin-top: 50px;
-
 }
 
-/*seta direita e seta esquerda*/
 .seta-esquerda-maisvendidos {
     width: 33px;
     position: relative;
     top: -250px;
     left: -35px;
-    /*teste(border)
-    border: 1px solid rgb(0, 24, 239);*/
     transition: ease 0.5s;
     cursor: pointer;
-
-
 }
 
 .seta-direita-maisvendidos {
@@ -463,11 +435,8 @@ main {
     position: relative;
     top: -288.5px;
     left: 1210px;
-    /*teste(border)
-    border: 1px solid rgb(0, 24, 239);*/
     transition: ease 0.5s;
     cursor: pointer;
-
 }
 
 #maisvendidos .seta-esquerda-maisvendidos:hover {
@@ -478,8 +447,6 @@ main {
     transform: scale(1.1);
 }
 
-
-/*RodaPé*/
 footer {
     height: 300px;
     padding: 50px;
@@ -506,8 +473,8 @@ footer {
 
 #cnpjlogo,
 #cnpj img:last-of-type {
-  display: block;
-  margin: 10px auto;
+    display: block;
+    margin: 10px auto;
 }
 
 #menufooter nav ul {
@@ -532,7 +499,7 @@ footer {
     height: 25px;
     margin: 10px;
 }
-/* Estilo do formulário de pagamento */
+
 #payment-form {
     max-width: 600px;
     margin: 40px auto;
@@ -578,7 +545,6 @@ footer {
     border-color: rgb(110, 131, 248);
 }
 
-/* Botões */
 #payment-form button[type="submit"],
 #payment-form button[type="button"] {
     padding: 15px 20px;
@@ -609,7 +575,6 @@ footer {
     background-color: #5a6268;
 }
 
-/* Responsivo para formulário de pagamento */
 @media (max-width: 600px) {
     #payment-form {
         padding: 20px;
@@ -622,149 +587,148 @@ footer {
     }
 }
 
-
-
-
-
-/* Responsividade navbar e ícones */
 @media (max-width: 1200px) {
     .nav-icons {
-      margin-right: 50px;
+        margin-right: 50px;
     }
-  
+
     .navbar-nav {
-      margin-left: 30px;
-      gap: 15px;
+        margin-left: 30px;
+        gap: 15px;
     }
-  }
-  
-  /* Tablets */
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
     .nav-icons {
-      margin-right: 20px;
+        margin-right: 20px;
     }
-  
+
     .navbar-nav {
-      margin-left: 0;
-      gap: 10px;
-      justify-content: center;
-      flex-wrap: wrap;
+        margin-left: 0;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-  
+
     footer {
-      flex-direction: column;
-      height: auto;
-      padding: 40px 20px;
-      text-align: center;
-      gap: 30px;
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
     }
-  
+
     #menufooter nav ul {
-      padding: 0;
+        padding: 0;
     }
-  
+
     #menufooter nav ul li {
-      margin: 5px 0;
+        margin: 5px 0;
     }
-  
+
     #redes-pagamento {
-      flex-direction: row;
-      justify-content: center;
-      gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
     }
-  
+
     .produtos {
-      width: 45%;
+        width: 45%;
     }
-  
-    .livpcgamer, .livhardware, .livmonitores,
-    .livgabinetes, .livperifericos, .livoutros {
-      width: 45%;
+
+    .livpcgamer,
+    .livhardware,
+    .livmonitores,
+    .livgabinetes,
+    .livperifericos,
+    .livoutros {
+        width: 45%;
     }
-  
+
     .seta-direita,
     .seta-direita-maisvendidos,
     .seta-esquerda,
     .seta-esquerda-maisvendidos {
-      display: none;
+        display: none;
     }
-  }
-  
-  /* Celulares */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .navbar-brand img {
-      height: 32px;
+        height: 32px;
     }
-  
+
     .nav-icons img {
-      width: 24px;
-      height: 24px;
+        width: 24px;
+        height: 24px;
     }
-  
+
     #produtosnovidades,
     #produtosmaisvendidos {
-      flex-wrap: wrap;
-      justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-  
+
     .produtos {
-      width: 90%;
+        width: 90%;
     }
-  
-    .livpcgamer, .livhardware, .livmonitores,
-    .livgabinetes, .livperifericos, .livoutros {
-      width: 90%;
+
+    .livpcgamer,
+    .livhardware,
+    .livmonitores,
+    .livgabinetes,
+    .livperifericos,
+    .livoutros {
+        width: 90%;
     }
-  
+
     #div_capa img {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
-  
+
     #div_miniatura {
-      justify-content: center;
-      gap: 10px;
+        justify-content: center;
+        gap: 10px;
     }
-  
+
     #div_miniatura img {
-      width: 60px;
-      height: 90px;
+        width: 60px;
+        height: 90px;
     }
-  
+
     #div_carrinho button {
-      width: 100%;
-      padding: 15px 0;
+        width: 100%;
+        padding: 15px 0;
     }
-  }
-  
-  /* Smartphones pequenos */
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .usuario img {
-      width: 30px;
-      height: 30px;
+        width: 30px;
+        height: 30px;
     }
-  
+
     .livpcgamer h3,
     .livhardware h3,
     .livmonitores h3,
     .livgabinetes h3,
     .livperifericos h3,
     .livoutros h3 {
-      font-size: 10pt;
+        font-size: 10pt;
     }
-  
+
     .livpreco {
-      font-size: 9pt;
+        font-size: 9pt;
     }
-  
+
     #redes-pagamento {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .nav-icons {
-      justify-content: center;
-      margin: 10px 0;
+        justify-content: center;
+        margin: 10px 0;
     }
-  }
-  
+}
