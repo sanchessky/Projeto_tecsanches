@@ -40,8 +40,8 @@ O Front-End foi desenvolvido com:
 - Estrutura modular e organizada por páginas e componentes
 
 ## Responsivo
-![Mobile](img/responsivo.PNG) | ![Mobile Deitado](img/responsivodeitado.PNG)
-![Tablet](img/tablet.PNG) | ![Tablet Deitado](img/tabletdeitado.PNG)
+![Mobile](img/responsivo.PNG)  ![Mobile Deitado](img/responsivodeitado.PNG)
+![Tablet](img/tablet.PNG)  ![Tablet Deitado](img/tabletdeitado.PNG)
 
 # Autores
 * Allan Victor – Front-End
