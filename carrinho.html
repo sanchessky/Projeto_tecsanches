@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
 
 </head>
 
-<body onload="carregar_novidades()">
+<body onload="carregar_produtos_carrinho()">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,88 +39,73 @@
           <a href="carrinho.html" class="carrinho">
             <img src="img/carrinho.png" alt="Carrinho de Compras">
           </a>
-          <a href="#" class="usuario" data-bs-toggle="modal" data-bs-target="#modalLogin">
+          <a href="#" class="usuario" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img src="img/usuario.png" alt="Usuário">
           </a>
         </div>
       </div>
   </nav>
 
-  <main>
-    <section id="novidades">
-      <div class="Container">
-        <h2>Novidades</h2>
-        <div id="produtosnovidades"></div>
-    </section>
-
-    <!--seta esquerda-->
-    <div class="seta-esquerda" onclick="rolarNovidadesDireita()"><img src="img/seta_esquerda.png" alt="seta esquerda">
-    </div>
-    <!--seta direita-->
-    <div class="seta-direita" onclick="rolarNovidadesEsquerda()"><img src="img/seta_direita.png" alt="seta direita">
-    </div>
-    <!--Fim Novidades livros mais vendidos-->
-
-
-    <!--  Os mais vendidos-->
-    <section id="maisvendidos">
-      <h2>Mais Procurados</h2>
-      <p class="txtmaisvendidos">Confira nossos mais procurados.</p>
-      <div id="produtosmaisvendidos">
-        <!--Caregamento dos livros do backand-->
+   <main>
+     <!-- Modal de Cadastro -->
+  
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form onsubmit="return false">
+            <input type="text" class="form-control" id="txtusuario" placeholder="Usuário" required>
+            <br>
+            <input type="password" class="form-control" id="txtpassword" placeholder="Senha" required>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="efetuarlogin()">Logar</button>
+          <a href="usuario.html"><button type="button" class="btn btn-secondary">Cadastrar-se</button></a>
+        </div>
       </div>
-
-
-
-    </section>
-
-    <!--seta esquerda-->
-    <div class="seta-esquerda-maisvendidos" onclick="rolarMaisVendidosDireita()"><img src="img/seta_esquerda.png"
-        alt="seta esquerda"></div>
-    <!--seta direita-->
-    <div class="seta-direita-maisvendidos" onclick="rolarMaisVendidosEsquerda()"><img src="img/seta_direita.png"
-        alt="seta direita">
     </div>
+  </div>
+
+    <!--Conteúdo -->
+        <h2>Carrinho</h2>
+
+        <div id="lista_produto_carrinho"></div>
+        <div id="total_pagar"></div>
+        <a href="pagamento.html"><button id="efetuar_pagamento" >Efetuar Pagamento</button></a>
 
 
-    <!--Autores-->
-    <section id="Funcionario">
-      <h2>Nossos Funcionarios</h2>
-      <p class="txtfuncionarios">Confira nossos Nossos Funcionarios.</p>
-      <div id="produtosfuncionarios">
-    </section>
-  </main>
-
-
-
+    </main>
+    
   <!--Rodapé-->
-  <footer>
+<footer>
     <div id="menufooter">
-      <nav>
-        <ul>
-          <li><a href="#" class="titulo-menu">Categorias</a></li>
-          <li><a href="pcgamer.html">PC Gamer</a></li>
-          <li><a href="hardware.html">Hardware</a></li>
-          <li><a href="monitores.html">Monitores</a></li>
-          <li><a href="gabinetes.html">Gabinetes</a></li>
-          <li><a href="perifericos.html">Periféricos</a></li>
-          <li><a href="outros.html">Outros</a></li>
+        <nav>
+            <ul>
+                <li><a href="#" class="titulo-menu">Categorias</a></li>
+                <li><a href="pcgamer.html">PC Gamer</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="monitores.html">Monitores</a></li>
+                <li><a href="gabinetes.html">Gabinetes</a></li>
+                <li><a href="perifericos.html">Periféricos</a></li>
+                <li><a href="outros.html">Outros</a></li>
 
-        </ul>
-      </nav>
+            </ul>
+        </nav>
     </div>
     <div id="redes-pagamento">
-      <div id="redes">
-        <a href="https://www.instagram.com/tecnologia_do_sanches/" target="_blank"> <img src="/img/instagram.png"
-            alt="instagram"></a>
-        <a href="https://www.facebook.com/tecnologia_do_sanches/" target="_blank"> <img src="/img/facebook.png"
-            alt="Facebook"></a>
-        <a href="https://www.youtube.com/@Espetacular_sanches" target="_blank"> <img src="/img/youtube.png"
-            alt="Youtube"></a>
-      </div>
-      <div id="pagamento">
-        <img src="img/formaspagamento.png" alt="">
-      </div>
+        <div id="redes">
+            <a href="https://www.instagram.com/tecnologia_do_sanches/" target="_blank"> <img src="/img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/tecnologia_do_sanches/" target="_blank"> <img src="/img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@Espetacular_sanches" target="_blank"> <img src="/img/youtube.png" alt="Youtube"></a>
+        </div>
+        <div id="pagamento">
+            <img src="img/formaspagamento.png" alt="">
+        </div>
     </div>
     <div id="cnpj">
       <img id="cnpjlogo" src="img/logo1.png"><br>
@@ -129,7 +115,7 @@
       SOMOS E-COMMERCE – NÃO TEMOS ATENDIMENTO LOCAL<br>
       <img src="img/Powered-by.png">
     </div>
-  </footer>
+</footer>
 
   <!-- Modal de Login -->
   <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
@@ -158,46 +144,36 @@
   <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalCadastroLabel">Cadastrar Usuário</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="txtnome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="txtnome" placeholder="Nome">
-          </div>
-          <div class="mb-3">
-            <label for="txtemail" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="txtemail" placeholder="E-mail">
-          </div>
-          <div class="mb-3">
-            <label for="txt-Cpf" class="form-label">CPF</label>
-            <input type="email" class="form-control" id="txtemail" placeholder="XXX.XXX.XXX-XX">
-          </div>
-          <div class="mb-3">
-            <label for="txt_telefone" class="form-label">Telefone</label>
-            <input type="email" class="form-control" id="txtemail" placeholder="+55 (12)34567-8901">
-          </div>
-          <div class="mb-3">
-            <label for="DataNas" class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-control" id="txtemail" placeholder="00/00/0000">
-          </div> 
-          <div class="mb-3">
-            <label for="txt_endereco" class="form-label">Endereço</label>
-            <input type="email" class="form-control" id="txtemail" placeholder="Rua das Flores, 123 - Centro, São Paulo">
-          </div> 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary" id="btnCadastrar">Cadastrar</button>
-        </div>
+        
       </div>
     </div>
   </div>
 
 
 
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form onsubmit="return false">
+            <input type="text" class="form-control" id="txtusuario" placeholder="Usuário" required>
+            <br>
+            <input type="password" class="form-control" id="txtpassword" placeholder="Senha" required>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="efetuarlogin()">Logar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
 
 
   <script src="js/scripts.js"></script>
@@ -208,7 +184,7 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 
-
+ 
 
 
 </body>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área do Usuário - TecSanches</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/logo1.png" alt="Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="pcgamer.html">Pc Gamer</a></li>
+          <li class="nav-item"><a class="nav-link" href="hardware.html">Hardware</a></li>
+          <li class="nav-item"><a class="nav-link" href="monitores.html">Monitores</a></li>
+          <li class="nav-item"><a class="nav-link" href="gabinetes.html">Gabinetes</a></li>
+          <li class="nav-item"><a class="nav-link" href="perifericos.html">Periféricos</a></li>
+          <li class="nav-item"><a class="nav-link" href="outros.html">Outros</a></li>
+        </ul>
+
+        <!--  ícones alinhados à direita -->
+        <div class="nav-icons">
+          <a href="carrinho.html" class="carrinho">
+            <img src="img/carrinho.png" alt="Carrinho de Compras">
+          </a>
+          <a href="#" class="usuario" data-bs-toggle="modal" data-bs-target="#modalLogin">
+            <img src="img/usuario.png" alt="Usuário">
+          </a>
+        </div>
+      </div>
+  </nav>
+
+  <main>
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="modalCadastroLabel">Cadastrar Usuário</h1>
+    </div>
+    <div class="modal-body">
+      <div class="mb-3">
+        <label for="txtNome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="txtNome" placeholder="Nome completo">
+      </div>
+      <div class="mb-3">
+        <label for="txtEmail" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="txtEmail" placeholder="seu@email.com">
+      </div>
+      <div class="mb-3">
+        <label for="txtCpf" class="form-label">CPF</label>
+        <input type="text" class="form-control" id="txtCpf" placeholder="XXX.XXX.XXX-XX">
+      </div>
+      <div class="mb-3">
+        <label for="txtTelefone" class="form-label">Telefone</label>
+        <input type="text" class="form-control" id="txtTelefone" placeholder="+55 (11) 91234-5678">
+      </div>
+      <div class="mb-3">
+        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+        <input type="date" class="form-control" id="dataNascimento">
+      </div>
+      
+      <div class="mb-3">
+        <label for="logradouro" class="form-label">Logradouro</label>
+        <select class="form-select" id="logradouro" name="logradouro" required>
+          <option value="">Selecione</option>
+          <option value="rua">Rua</option>
+          <option value="avenida">Avenida</option>
+          <option value="travessa">Travessa</option>
+          <option value="alameda">Alameda</option>
+          <option value="praca">Praça</option>
+          <option value="rodovia">Rodovia</option>
+          <option value="estrada">Estrada</option>
+          <option value="largo">Largo</option>
+          <option value="vila">Vila</option>
+          <option value="via">Via</option>
+          <option value="viela">Viela</option>
+          <option value="beco">Beco</option>
+          <option value="servidao">Servidão</option>
+          <option value="condominio">Condomínio</option>
+          <option value="residencial">Residencial</option>
+          <option value="quadra">Quadra</option>
+          <option value="setor">Setor</option>
+          <option value="parque">Parque</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="endereco" class="form-label">Endereço</label>
+        <input type="text" class="form-control" id="endereco" placeholder="Ex: Rua das Flores">
+      </div>
+      <div class="mb-3">
+        <label for="numero" class="form-label">Número</label>
+        <input type="text" class="form-control" id="numero" placeholder="Ex: 123">
+      </div>
+      <div class="mb-3">
+        <label for="bairro" class="form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" placeholder="Ex: Centro">
+      </div>
+      <div class="mb-3">
+        <label for="complemento" class="form-label">Complemento</label>
+        <input type="text" class="form-control" id="complemento" placeholder="Ex: Apto 202, bloco B">
+      </div>
+      <div class="mb-3">
+        <label for="cep" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="cep" placeholder="12345-678">
+      </div>
+  
+      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="btnCadastrar" onclick="Cadastrar()">Cadastrar</button>
+      </div>
+    </div>
+  </main>
+  
+  <!--Rodapé-->
+  <footer>
+    <div id="menufooter">
+      <nav>
+        <ul>
+          <li><a href="#" class="titulo-menu">Categorias</a></li>
+          <li><a href="pcgamer.html">PC Gamer</a></li>
+          <li><a href="hardware.html">Hardware</a></li>
+          <li><a href="monitores.html">Monitores</a></li>
+          <li><a href="gabinetes.html">Gabinetes</a></li>
+          <li><a href="perifericos.html">Periféricos</a></li>
+          <li><a href="outros.html">Outros</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    <div id="redes-pagamento">
+      <div id="redes">
+        <a href="https://www.instagram.com/tecnologia_do_sanches/" target="_blank"> <img src="/img/instagram.png"
+            alt="instagram"></a>
+        <a href="https://www.facebook.com/tecnologia_do_sanches/" target="_blank"> <img src="/img/facebook.png"
+            alt="Facebook"></a>
+        <a href="https://www.youtube.com/@Espetacular_sanches" target="_blank"> <img src="/img/youtube.png"
+            alt="Youtube"></a>
+      </div>
+      <div id="pagamento">
+        <img src="img/formaspagamento.png" alt="">
+      </div>
+    </div>
+    <div id="cnpj">
+      <img id="cnpjlogo" src="img/logo1.png"><br>
+      TECSANCHES ATACADO E VAREJO DE PRODUTOS DE INFORMÁTICA LTDA <br>
+      CNPJ: 61.913.988/0001-74 | São Paulo-SP<br>
+      De segunda a sexta das 8:30 às 12H / 13H às 18H<br>
+      SOMOS E-COMMERCE – NÃO TEMOS ATENDIMENTO LOCAL<br>
+      <img src="img/Powered-by.png">
+    </div>
+  </footer>
+
+
+
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
