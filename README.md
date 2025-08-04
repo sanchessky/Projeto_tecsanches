@@ -1,4 +1,4 @@
-# 🛠️ Projeto Front-End Tec Sabches
+# 🛠️ Projeto Front-End Tec Sanches
 
 Projeto integrador desenvolvido no **Senac Tatuapé**, com foco no **desenvolvimento Front-End** de um site para uma loja de equipamentos de informática. Idealizado para simular a estrutura funcional de um comércio moderno, com foco em:
 
